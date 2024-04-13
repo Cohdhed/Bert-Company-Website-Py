@@ -1,0 +1,759 @@
+.services-section {
+    background-color: #f4f3ee; /* Set background color */
+    padding: 40px 0; /* Add padding to create space around the content */
+    margin-top: -510px;
+}
+  
+.services-header {
+    text-align: left; /* Center align the header */
+    max-width: 85%;
+    margin: 0 auto; /* Center the content horizontally */
+    padding-bottom: 20px;
+
+}
+
+
+.services-top-pragraphs {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.p25 {
+    color: grey;
+    padding-bottom: 20px;  
+    font-size: 14.5px;  
+}
+.p26 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+
+/* Existing CSS styles */
+.services-grid-section {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #f4f3ee;
+    padding: 70px 0;
+}
+
+.services-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-left {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.p28 {
+    font-weight: bold;
+    font-size: 40px !important;
+    margin-bottom: 10px;
+    color: rgb(12, 12, 88);
+    padding-bottom: 50px;
+}
+
+.p29 {
+    max-width: 50%;
+    font-weight: lighter !important;
+    font-size: 22px !important;
+    padding-bottom: 50px;
+    line-height: 1.6; /* Adjust the value as needed */
+    color: rgb(58, 58, 102);
+}
+
+.grid-list li {
+    margin-bottom: 20px; /* Adjust as needed */
+    color: rgb(58, 58, 102);
+}
+
+.grid-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.services-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.services-grid-item img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.services-grid-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.services-grid-item-content {
+    margin-top: 10px;
+}
+
+.p27 {
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.services-learn-more-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: white;
+    color: orange;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    font-weight: normal;
+}
+
+.services-learn-more-btn:hover {
+    color: black; /* Change text color on hover */
+}
+
+.services-learn-more-btn .fas {
+    margin-left: 5px; /* Adjust the spacing between the text and the icon */
+}
+
+
+
+.green-background-section {
+    background-color: rgb(229, 229, 242); /* Set your desired background color */
+    padding: 30px 0; /* Add padding as needed */
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+  
+.green-background-container {
+    max-width: 95%;
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Align the content to the center */
+}
+
+.p30 {
+    color: gray;
+    font-size: 12.5px;
+    padding-bottom: 25px;
+}
+
+.p31 {
+    font-size: 23px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+.p32 {
+    color: gray;
+}
+
+
+.green-services-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.green-services-column {
+    font-family: Playfair Display;
+    max-width: 37%;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.green-service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px; /* Adjust spacing between service items */
+}
+
+.p33 {
+    font-size: 27px;
+}
+
+.green-service-item i {
+    font-size: 70px; /* Adjust icon size */
+    margin-right: 10px; /* Adjust spacing between icon and text */
+}
+
+/* Optional: Style the icons */
+.green-service-item i {
+    color: #007bff; /* Change icon color */
+}
+
+
+
+.services-page-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.services-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+
+.left-side {
+    flex: 1;
+}
+
+.left-side img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.right-side {
+    flex: 1;
+    width: calc(50% - 20px); /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.p34 {
+    color: #cea322;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.p35 {
+    font-family: Exo 2;
+    font-weight: bold;
+    font-size: 27px;
+    padding-bottom: 20px;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons-3 {
+    background-color: white;
+    padding: 20px;
+}
+
+.buttons-grid button {
+    font-weight: bold;
+    padding: 5px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-grid button:hover {
+    background-color: #0056b3;
+}
+
+.text-content {
+    font-size: 16px;
+    color: gray;
+}
+
+#mission-text {
+    display: block; /* Display the mission text by default */
+}
+
+
+
+
+
+
+
+/* You may style the buttons and text content as per your design */
+
+
+
+@media (max-width: 1140px) {
+
+/* about-up-bg */
+.services-section {
+    position: relative;
+    margin-top: -485px; /* Adjust the negative margin */
+}
+
+}
+
+
+
+@media (max-width: 1025px) {
+
+/* about-up-bg */
+    .services-section {
+        position: relative;
+        margin-top: -425px; /* Adjust the negative margin */
+    }
+
+    .services-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .grid-left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .p28 {
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .p29 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 16px !important;
+        padding-bottom: 30px;
+    }
+
+    .grid-list li {
+        font-size: 15px;
+        text-align: left;
+        margin-left: 7px;
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+
+
+    .p33 {
+        font-size: 25px;
+    }
+    
+    .green-service-item i {
+        font-size: 50px; /* Adjust icon size */
+        margin-right: 10px; /* Adjust spacing between icon and text */
+    }
+
+
+    .services-page-section {
+        padding: 60px 0 40px 0;
+    }
+
+}
+
+
+@media (max-width: 858px) {
+
+    /* about-up-bg */
+    .services-section {
+      position: relative;
+      margin-top: -420px; /* Adjust the negative margin */
+    }
+
+    .p25 {
+        padding-bottom: 20px;  
+        font-size: 14px;  
+    }
+    .p26 {
+        font-weight: bold;
+        font-size: 27px;
+    }
+
+
+    .services-page-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0 20px 0;
+    }
+    
+    .services-page-container {
+        flex-direction: column; /* Display vertically on smaller screens */
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%; /* Set full width for both left and right grids */
+        margin-bottom: 20px; /* Add spacing between the left and right grids */
+        margin-left: 0;
+        text-align: center;
+    }
+    
+
+}
+
+
+@media (max-width: 820px) {
+    .p33 {
+        font-size: 20px;
+    }
+    
+    .green-service-item i {
+        font-size: 40px; /* Adjust icon size */
+        margin-right: 10px; /* Adjust spacing between icon and text */
+    }
+}
+
+
+@media (max-width: 705px) {
+    .p33 {
+        font-size: 18px;
+    }
+    
+    .green-service-item i {
+        font-size: 35px; /* Adjust icon size */
+        margin-right: 10px; /* Adjust spacing between icon and text */
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    /* about-up-bg */
+    .services-section {
+      margin-top: -420px; /* Adjust the negative margin */
+      padding: 20px 0;
+    }
+  
+    .services-header {
+      text-align: center; /* Center align the header */
+      padding-bottom: 20px;
+    }
+
+
+    .services-top-pragraphs {
+        padding: 15px 0;
+    }
+    
+    .p25 {
+        padding-bottom: 20px;  
+        font-size: 12.5px;  
+    }
+    .p26 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    .services-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .grid-left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .p28 {
+        font-size: 30px !important;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .p29 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 15px !important;
+        padding-bottom: 30px;
+    }
+
+    .grid-list li {
+        font-size: 15px;
+        text-align: left;
+        margin-left: 7px;
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+
+    .grid-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .services-grid-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center !important;
+        padding-bottom: 20px;
+    }
+
+    .services-grid-item img {
+        max-width: 100%;
+        border-radius: 90px; /* Make the CEO image circular */
+    }
+    
+    .services-grid-item:hover img {
+        transform: scale(1);
+    }
+
+    .p27 {
+        font-size: 20px;
+    }
+
+    .services-learn-more-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+    }
+
+
+
+    .green-background-section {
+        padding: 30px 0; /* Add padding as needed */
+        max-width: 95%;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    .green-background-container {
+        max-width: 90%;
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .p30 {
+        font-size: 12px;
+        padding-bottom: 25px;
+    }
+    
+    .p31 {
+        font-size: 20px;
+    }
+    
+    .p32 {
+        font-size: 14px;
+    }
+
+    .green-services-grid {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px; /* Adjust as needed */
+    }
+    
+    .green-services-column {
+        max-width: 37%;
+        margin: 0 auto;
+        flex: 1;
+    }
+    
+    .green-service-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px; /* Adjust spacing between service items */
+    }
+    
+    .p33 {
+        font-size: 15px;
+    }
+    
+    .green-service-item i {
+        font-size: 30px; /* Adjust icon size */
+        margin-right: 10px; /* Adjust spacing between icon and text */
+    }
+    
+    /* Optional: Style the icons */
+    .green-service-item i {
+        color: #007bff; /* Change icon color */
+    }
+
+
+
+    .services-page-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0 20px 0;
+    }
+    
+    .services-page-container {
+        flex-direction: column; /* Display vertically on smaller screens */
+    }
+
+    .p34 {
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+    
+    .p35 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%; /* Set full width for both left and right grids */
+        margin-bottom: 20px; /* Add spacing between the left and right grids */
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .buttons-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align buttons vertically */
+        margin-bottom: 20px;
+    }
+
+    .buttons-grid button {
+        margin-bottom: 10px; /* Add spacing between buttons */
+    }
+
+    .buttons-grid button {
+        font-weight: bold;
+        padding: 5px 15px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .text-content {
+        font-size: 13px;
+    }
+}  
+
+
+
+@media (max-width: 412px) {
+    .p25 {
+        padding-bottom: 20px;  
+        font-size: 12px;  
+    }
+    .p26 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+
+    .services-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .grid-left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .p28 {
+        font-size: 23px !important;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .p29 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 14px !important;
+        padding-bottom: 30px;
+    }
+
+    .grid-list li {
+        font-size: 13px;
+        text-align: left;
+        margin-left: 7px;
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+
+    .grid-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .services-grid-item img {
+        max-width: 100%;
+        border-radius: 90px; /* Make the CEO image circular */
+    }
+    
+    .services-grid-item:hover img {
+        transform: scale(1);
+    }
+
+    .p27 {
+        font-size: medium;
+    }
+
+    .services-learn-more-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+    }
+
+    
+    .green-services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+      
+    .green-services-column {
+        font-family: Playfair Display;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .green-service-item {
+        margin-bottom: 30px; /* Adjust spacing between service items */
+    }
+
+    .p33 {
+        font-size: 14.5px;
+    }
+
+    .green-service-item i {
+        font-size: 30px; /* Adjust icon size */
+    }
+    
+
+
+    .p35 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+
+    .buttons-grid button {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .text-content {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .p33 {
+        font-size: 12px;
+    }
+    
+    .green-service-item i {
+        font-size: 25px; /* Adjust icon size */
+    }
+}
