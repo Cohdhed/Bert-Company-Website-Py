@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %} {% include 'header.html' %} {% endblock header %}
+{% block content %} 
+
+  <!-- Contact Section -->
+  <section class="about-section">
+    <div class="about-header">
+      <p class="p16">Contact</p>
+    </div>
+    <!-- Content of the About Us section goes here -->
+
+    <div class="about-up-bg" style="background-image: url('{% static 'img/bg.jpg' %}');">
+      <!-- Existing content -->
+      <p class="p17">Contact Us Today for Tailored Solutions</p>
+      <p class="p18">OUR GOAL IS TO PROVIDE EFFICIENCY AND QUALITY ON TIME PROJECTS</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <!-- Left Section: Header Text -->
+      <div class="contact-left">
+        <p class="p36">Please contact us for a free quotation and tell us more about your project</p>
+        <div class="separator"></div>
+        <p class="p37">Thank you for your interest in requesting a work estimate, please fill out the form and we will get back to you shortly.</p>
+        <p class="p38">Tell us a bit about your project and we will match you with the perfect local contractor for FREE.</p>
+      </div>
+  
+      <!-- Right Section: Contact Form -->
+      <div class="contact-right">
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-success custom-success-message">
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
+        
+        <form id="contact-form" method="POST" action="{% url 'contact' %}" class="was-validated">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Cell Phone</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map Section -->
+  <div class="map-separator"></div>
+  <section class="google-map-section">
+    <div class="google-map">
+      <!-- Embedded Google Map iframe -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.546467503217!2d-0.12209412443174947!3d51.503189711012254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sng!4v1712516733255!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Text Section -->
+  <section class="map-text-section">
+    <div class="map-grid-container">
+      <!-- Cell 1 -->
+      <div class="map-grid-cell">
+        <p class="p39">Location</p>
+        <p class="p40">Santa Barbara, CA</p>
+      </div>
+      <!-- Cell 2 -->
+      <div class="map-grid-cell">
+        <p class="p39">Our hours</p>
+        <p class="p40">10:00 AM – 6:00 PM</p>
+        <p class="p40">Monday – Saturday</p>
+      </div>
+      <!-- Cell 3 -->
+      <div class="map-grid-cell">
+        <p class="p39">Contact us</p>
+        <p class="p40">Phone: (414) 595-1151</p>
+        <p class="p40">Email: anything@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock content %}
+{% block newsleter %} {% include 'newsletter.html' %} {% endblock newsleter %}
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}
+
+
+

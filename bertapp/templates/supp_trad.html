@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %} {% include 'header.html' %} {% endblock header %}
+{% block content %} 
+
+
+  <!-- Supply & Trading Section -->
+  <section class="about-section">
+    <div class="about-header">
+      <p class="p16">Supply & Trading</p>
+    </div>
+    <!-- Content of the sup&trad section goes here -->
+
+    <div class="about-up-bg" style="background-image: url('{% static 'img/bg.jpg' %}');">
+      <!-- Existing content -->
+      <p class="p17">Our Extensive Resume Is Comprised Of Over 3,500 Projects</p>
+    </div>
+
+  </section>
+  
+
+  <!-- New paragraphs with headers -->
+  <div class="paragraphs-container">
+    <div class="paragraph">
+      <p class="p41">Supply and Trading</p>
+      <p class="p42">We supply the best products to the right locations at the right times.</p>
+      <p class="p42"> <strong>Bert Petroleum Consultants</strong> Supply and Trading (S&T) provides a critical link between the market and ozone’s upstream, downstream and chemicals companies. We provide commercial support to our crude oil and natural gas production operations and to our refining and marketing network. Our trading professionals manage commodity transactions averaging 5 million barrels of liquids and 5 billion cubic feet of natural gas each day. Our activities are organized by crude oil, natural gas and refined products.</p>
+    </div>
+    <div class="paragraph">
+      <p class="p41">Crude Supply and Trading</p>
+      <p class="p42">Crude Supply and Trading (CSAT) buys, sells and transports all major grades of crude oil. CSAT secures the best prices for selling ozone’s upstream production and for purchasing crudes used by our refineries.</p>
+    </div>
+    <div class="paragraph">
+      <p class="p41">Gas Supply and Trading</p>
+      <p class="p42">Gas Supply and Trading (GSAT) helps maximize the value of ozones’s equity natural gas, liquefied petroleum gas (LPG)/natural gas liquids (NGLs) and LNG globally. GSAT markets and manages transportation for ozone’s equity natural gas production and manages all LPG/NGL trading activities. Additionally, GSAT negotiates long-term LNG contracts, lifts supply of LNG cargoes and engages in short-term LNG trades in order to market production from ozones’s LNG projects.</p>
+    </div>
+    <div class="paragraph">
+      <p class="p41">Product Supply and Trading</p>
+      <p class="p42">Product Supply and Trading manages global supply, trading and logistics for a wide range of products, including feedstocks, fuels, and refined products like gasoline, naphtha, diesel, jet fuel, heavy fuels, biofuels, coke, sulfur, ammonia and asphalt, and other products for the manufacturing and marketing network.</p>
+    </div>
+  </div>
+  
+
+
+{% endblock content %}
+{% block newsleter %} {% include 'newsletter.html' %} {% endblock newsleter %}
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}

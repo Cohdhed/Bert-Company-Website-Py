@@ -1,0 +1,355 @@
+.contact-section {
+    padding: 100px 0;
+    max-width: 85%;
+    margin: 0 auto;
+}
+  
+.contact-container {
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contact-left {
+    align-items: flex-start;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.p36 {
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: rgb(12, 12, 88);
+}
+
+.separator {
+    width: 100px; 
+    height: 6px;
+    background-color: #FFBF00; 
+    margin-bottom: 20px; 
+}
+  
+
+.p37 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 50%;
+    margin: 0 ;
+    font-size: 20px;
+    line-height: 1.6; /* Adjust the value as needed */
+    color: #666;
+    padding-bottom: 25px;
+    font-weight: lighter;
+}
+
+.p38 {
+    max-width: 50%;
+    margin: 0 ;
+}
+
+.contact-right {
+    padding-left: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 65%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Google Map Section */
+
+.map-separator{
+    max-width: 85%;
+    margin: 0 auto;
+    height: 0.5px;
+    background-color: black; 
+    margin-bottom: 100px; 
+}
+
+.google-map-section {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.google-map {
+    overflow: hidden;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+}
+
+/* Text Section */
+.map-text-section {
+    background-color: black; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 50px 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.map-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+    gap: 20px; /* Add gap between grid cells */
+}
+
+.map-grid-cell {
+    padding: 20px 50px; /* Add padding within each cell */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.p39 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add margin at the bottom of the header */
+}
+
+.p40 {
+    color: #666; /* Set color for paragraph text */
+    line-height: 1.5; /* Set line height for better readability */
+}
+  
+
+/* Success message */
+.custom-success-message {
+    background-color: #bee8c8;
+    color: #666;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: #666 solid 1px;
+}
+
+
+
+
+@media (max-width: 1038px) {
+
+    .google-map-section {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .map-text-section {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .map-grid-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Create a 3-column grid */
+        gap: 20px; /* Add gap between grid cells */
+    }
+    
+    .map-grid-cell {
+        padding: 20px 50px; /* Add padding within each cell */
+        border-radius: 5px; /* Add border radius for rounded corners */
+    }
+}
+
+
+@media (max-width: 952px) {
+
+    .contact-section {
+        padding: 80px 30px;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        display: grid;
+        text-align: left;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-left {
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .p36 {
+        text-align: left;
+        font-weight: bold;
+        padding-bottom: 30px;
+        font-size: 25px;
+        color: rgb(12, 12, 88);
+    }
+
+    .p37 {
+        max-width: 100%;
+        text-align: left;
+        font-size: 18px;
+        padding-bottom: 25px;
+        padding-top: 10px;
+    }
+    
+    .p38 {
+        text-align: left;
+        max-width: 100%;
+        font-size: 17px;
+        padding-bottom: 50px;
+    }
+    
+
+    .contact-right {
+        padding-left: 0px;
+    }
+    
+    .form-group {
+        margin-bottom: 30px;
+    }
+    
+    .form-group label {
+        font-weight: bold;
+        display: block;
+        font-size: 16px;
+        color: gray;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input {
+        width: 65%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+}
+
+
+
+
+@media (max-width: 660px) {
+
+    .contact-section {
+        padding: 70px 0;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        display: grid;
+        text-align: left;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-left {
+        align-items: center;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
+    .p36 {
+        text-align: left;
+        font-weight: bold;
+        padding-bottom: 30px;
+        font-size: 20px;
+        color: rgb(12, 12, 88);
+    }
+
+    .p37 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 15px;
+        padding-bottom: 25px;
+        padding-top: 10px;
+    }
+    
+    .p38 {
+        text-align: center;
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+    
+
+    .contact-right {
+        padding-left: 0px;
+    }
+    
+    .form-group {
+        margin-bottom: 30px;
+    }
+    
+    .form-group label {
+        font-weight: bold;
+        display: block;
+        font-size: 16px;
+        color: gray;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+}
+
+
+@media (max-width: 450px) {
+    .p39 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px; /* Add margin at the bottom of the header */
+    }
+    
+    .p40 {
+        font-size: 12px;
+        color: #666; /* Set color for paragraph text */
+        line-height: 1.5; /* Set line height for better readability */
+    }
+}

@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static '' %}css/style.css">
+  <link rel="stylesheet" href="{% static '' %}css/about_style.css">
+  <link rel="stylesheet" href="{% static '' %}css/contact_style.css">
+  <link rel="stylesheet" href="{% static '' %}css/refining_style.css">
+  <link rel="stylesheet" href="{% static '' %}css/services_style.css">
+  <link rel="stylesheet" href="{% static '' %}css/sup_trad_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Your+Desired+Company+Name+Font&family=Your+Desired+Description+Font&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  {% block header %} {% endblock header %}
+  <!-- Header done-->
+  
+  
+  <!-- Content -->
+  {% block content %} {% endblock content %}
+  <!-- Content done-->
+  
+  
+  <!-- Get Newsletter Section -->
+  {% block newsleter %} {% endblock newsleter %}
+  <!-- Get Newsletter Section done-->
+  
+
+  <!-- Footer -->
+  {% block footer %} {% endblock footer %}
+  <!-- Footer done-->
+  
+
+
+  <!-- Scroll to the top button -->
+  <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollToTopBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+  </script>
+  
+</body>
+</html>

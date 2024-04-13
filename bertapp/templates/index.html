@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block header %} {% include 'header.html' %} {% endblock header %}
+{% block content %} 
+
+<!-- Banner -->
+  <div class="banner">
+    <div class="banner-content">
+      <div class="company-name">
+        <span>BERT</span><br>
+        <span>PETROLEUM</span><br>
+        <span>CONSULTANTS</span>
+      </div>
+      <div class="company-description">
+        BERT Petroleum Consultants is a partner of choice for the private sector and public sector who seek knowledgeable talent, with proven experience and the expertise to respond to the numerous infrastructure demands and needs of the continent.
+      </div>
+    </div>
+  </div>
+
+  <!-- Body -->
+
+  <!--1st Background Section -->
+  <section class="main-body">
+    <div class="main-body-content">
+      <p class="p1">GET SOLUTIONS THAT MEET YOUR INDUSTRY’S SPECIFIC NEEDS</p>
+      <p class="p2">Versatile solutions for the special needs of different industries</p>
+      <p class="p3">Our team understand the importance of your operations. Their in-depth knowledge and unrivaled industry experience ensures that our services are delivered safely and cost effectively.</p>
+    </div>
+  </section>
+
+  
+  
+  <!-- Service Boxes -->
+  <section class="service-boxes">
+    <div class="service-box">
+      <img src="{% static 'img/power&oil.jpg' %}" alt="Service 1">
+      <div class="overlay">
+        <h3>Power and Petrol</h3>
+        <a href="{% url 'supp_trad' %}" class="learn-more-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'img/engineering.jpg' %}" alt="Service 2">
+      <div class="overlay">
+        <h3>Engineering</h3>
+        <a href="{% url 'supp_trad' %}" class="learn-more-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'img/manufacturing.jpg' %}" alt="Service 2">
+      <div class="overlay">
+        <h3>Manufacturing</h3>
+        <a href="{% url 'supp_trad' %}" class="learn-more-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'img/chemical research.jpg' %}" alt="Service 2">
+      <div class="overlay">
+        <h3>Chemical Research</h3>
+        <a href="{% url 'supp_trad' %}" class="learn-more-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'img/oil_industry.jpg' %}" alt="Service 2">
+      <div class="overlay">
+        <h3>Oil Industry</h3>
+        <a href="{% url 'supp_trad' %}" class="learn-more-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'img/mineral resources.jpg' %}" alt="Service 2">
+      <div class="overlay">
+        <h3>Mineral Industrial</h3>
+        <a href="{% url 'supp_trad' %}" class="learn-more-btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Button for All Services -->
+  <section class="all-service-btn">
+    <div class="all-services-button">
+      <a href="{% url 'services' %}" class="all-services-link">All Services</a>
+    </div>
+  </section>
+
+  <!--2nd Background Section -->
+  <section class="background-section">
+    <div class="background-content">
+      <p class="p4">ENERGY EFFICIENCY IN THE OIL AND GAS SECTOR PRIMARILY RELATES TO THE EFFICIENT USE OF ENERGY</p>
+      <p class="p5">We operate to internationally recognised and certified standards</p>
+
+
+      <!-- Grid Container -->
+      <div class="grid-container">
+        <!-- Grid Cell 1 -->
+        <div class="grid-cell">
+          <img src="{% static 'img/workers.jpg' %}" alt="Service 1">
+          <div class="grid-text">
+            <p class="big-figure">721+</p>
+            <p class="short-text">WORKERS IN INDUSTRY</p>
+          </div>
+        </div>
+        <!-- Grid Cell 2 -->
+        <div class="grid-cell">
+          <img src="{% static 'img/projectss.jpg' %}" alt="Service 2">
+          <div class="grid-text">
+            <p class="big-figure">502+</p>
+            <p class="short-text">COMPLETED PROJECTS</p>
+          </div>
+        </div>
+        <!-- Grid Cell 3 -->
+        <div class="grid-cell">
+          <img src="{% static 'img/professional.jpg' %}" alt="Service 3">
+          <div class="grid-text">
+            <p class="big-figure">145+</p>
+            <p class="short-text">PROFESSIONAL ENGINEERS</p>
+          </div>
+        </div>
+        <!-- Grid Cell 4 -->
+        <div class="grid-cell">
+          <img src="{% static 'img/world.jpg' %}" alt="Service 4">
+          <div class="grid-text">
+            <p class="big-figure">45+</p>
+            <p class="short-text">WORLDWIDE BRANCHES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Header and Grid Section -->
+  <section class="grid-section">
+    <div class="header-text">
+      <p class="p6">WE DELIVER A COMPREHENSIVE SCOPE AND RANGE OF END-TO-END INDUSTRY SPECIFIC SOLUTIONS</p>
+      <p class="p7">A global oil and gas industry association for advancing environmental and social performance</p>
+    </div>
+    
+    <div class="grid-container">
+      
+      <div class="percentage-bars">
+        <div class="grid-text">
+          <p class="p8">We’re positioned to fulfill the needs of the local and regional markets</p>
+          <p class="p9">CHOOSE US FOR YOUR SERVICE</p>
+        </div>
+        <div class="percentage-bar">
+          <div class="bar-text">Oil Refinery</div>
+          <div class="progress">
+            <div class="progress-bar oil-refinery" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+        <div class="percentage-bar">
+          <div class="bar-text">Renewable Resources</div>
+          <div class="progress">
+            <div class="progress-bar renewable-resources" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+        <div class="percentage-bar">
+          <div class="bar-text">Manufacturing</div>
+          <div class="progress">
+            <div class="progress-bar manufacturing" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+        </div>
+        <div class="percentage-bar">
+          <div class="bar-text">Petrol & Gas</div>
+          <div class="progress">
+            <div class="progress-bar petrol-gas" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="grid-image">
+        <img src="{% static 'img/grid-long-img.jpeg' %}" alt="Service Image">
+      </div>
+    </div>  
+  </section>
+
+  <!-- 3rd Background Section -->
+  <section class="third-background-section">
+    <div class="background-grid">
+      <div class="background-text">
+        <p class="p10">OUR EXTENSIVE RESUME IS COMPRISED OF OVER 3,500 PROJECTS COMPLETED</p>
+        <p class="p11">We always help the industry improve its environmental and social performance</p>
+      </div>
+      <div class="background-button">
+        <a href="{% url 'services' %}" class="btn">All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos Section -->
+  <section class="logo-section">
+    <div class="logo-container">
+      <img src="{% static 'img/iso-logo-black-and-white.png' %}" alt="Logo 1">
+      <img src="{% static 'img/ase-certified-1-logo-png-transparent.png' %}" alt="Logo 2">
+      <img src="{% static 'img/sgs-logo.png' %}" alt="Logo 3">
+      <img src="{% static 'img/quality-assured-removebg-preview.png' %}" alt="Logo 4">
+      <img src="{% static 'img/vesco-removebg-preview-removebg-preview (1).png' %}" alt="Logo 5">
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started-section">
+    <div class="background-image">
+      <div class="content">
+        <p class="p12">WE OFFER INDUSTRIAL & REFINERY UNIQUE TREATMENT PROGRAMS</p>
+        <p class="p13">The global oil and gas industry association for advancing environmental and social</p>
+        <a href="{% url 'contact' %}" class="get-started-btn">GET STARTED</a>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}
+{% block newsleter %} {% include 'newsletter.html' %} {% endblock newsleter %}
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}

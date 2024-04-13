@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %} {% include 'header.html' %} {% endblock header %}
+{% block content %} 
+  
+  
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="services-header">
+      <p class="p16">Services</p>
+    </div>
+
+    <!-- Add your services content here -->
+
+    <div class="about-up-bg" style="background-image: url('{% static 'img/bg.jpg' %}');">
+      <p class="p18">THE GLOBAL ENERGY PERSPECTIVE DESCRIBES OUR VIEW ON HOW THE ENERGY TRANSITION CAN UNFOLD</p>
+      <p class="p17">We provide a variety of engineering services for our clients</p>
+    </div>
+
+
+    <!-- Grid part -->
+    <section class="services-grid-section">
+      <div class="services-grid-container">
+          <!-- Left Section -->
+          <div class="grid-left">
+              <p class="p28">Know our services</p>
+              <p class="p29">The benefits of applying effective engineering solutions are many:</p>
+              <ul class="grid-list">
+                <li><i class="fas fa-check"></i> Reduced cost</li>
+                <li><i class="fas fa-check"></i> Improved quality and safety</li>
+                <li><i class="fas fa-check"></i> Reduced risk</li>
+              </ul>
+          </div>
+
+          
+          <!-- Right Section -->
+          <div class="grid-right">
+              <!-- Image 1 -->
+              <div class="services-grid-item">
+                  <img src="{% static 'img/explor.jpg' %}" alt="Image 1">
+                  <div class="grid-item-content">
+                      <p class="p27">Exploration & Production</p>
+                      <a href="{% url 'refining' %}" class="services-learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+              </div>
+              <!-- Image 2 -->
+              <div class="services-grid-item">
+                  <img src="{% static 'img/explor.jpg' %}" alt="Image 2">
+                  <div class="grid-item-content">
+                      <p class="p27">Refining</p>
+                      <a href="{% url 'refining' %}" class="services-learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+              </div>
+              <!-- Image 3 -->
+              <div class="services-grid-item">
+                  <img src="{% static 'img/refinign.jpeg' %}" alt="Image 3">
+                  <div class="grid-item-content">
+                      <p class="p27">Chemical & Addictives</p>
+                      <a href="{% url 'refining' %}" class="services-learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+              </div>
+              <!-- Image 4 -->
+              <div class="services-grid-item">
+                  <img src="{% static 'img/supply.jpg' %}" alt="Image 4">
+                  <div class="grid-item-content">
+                      <p class="p27">Supply & Trading</p>
+                      <a href="{% url 'refining' %}" class="services-learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>  
+    
+    <!-- Add a background color and header text -->
+    <section class="green-background-section">
+      <div class="green-background-container">
+        <p class="p30">WE ARE HERETO SUSTAINABLY DELIVER PROFITABLE, DIVERSIFIED ENERGY SOLUTIONS THROUGH OPERATIONAL EXCELLENCE, SKILLED WORKFORCE AND EFFECTIVE PARTNERSHIP</p>
+        <p class="p31">We are one of the leading oil & gas chemical company</p>
+        <p class="p32">Ozone chemicals has a strong reserve base and proven track record of converting contingent resources to reserves. The management team has also achieved a consistent increase in gross operated oil production and boasts a record of value-accretive acquisitions.</p>
+      </div>
+
+      <section class="green-services-grid">
+        <div class="green-services-column">
+          <div class="green-service-item">
+            <i class="fas fa-cogs"></i>
+            <p class="p33">ENGINEERING</p>
+          </div>
+          <div class="green-service-item">
+            <i class="fas fa-industry"></i>
+            <p class="p33">INDUSTRIAL</p>
+          </div>
+          <div class="green-service-item">
+            <i class="fas fa-tools"></i>
+            <p class="p33">MANUFACTURING</p>
+          </div>
+        </div>
+        <div class="green-services-column">
+          <div class="green-service-item">
+            <i class="fas fa-oil-can"></i>
+            <p class="p33">OIL & GAS</p>
+          </div>
+          <div class="green-service-item">
+            <i class="fas fa-flask"></i>
+            <p class="p33">CHEMICAL PROCESSING</p>
+          </div>
+          <div class="green-service-item">
+            <i class="fas fa-car"></i>
+            <p class="p33">AUTOMOTIVE</p>
+          </div>
+        </div>
+      </section>
+      
+    </section>
+
+
+    <section class="services-page-section">
+      <div class="services-page-container">
+          <!-- Left Side: Image -->
+          <div class="left-side">
+              <img src="{% static 'img/small-scr.jpg' %}" alt="Image">
+          </div>
+  
+          <!-- Right Side: Texts and Buttons -->
+          <div class="right-side">
+              <!-- Header Texts -->
+              <p class="p34">WE INTEGRATE ENGINEERING DESIGN EXCELLENCE</p>
+              <p class="p35">A strong experience in oil & gas</p>
+  
+              <!-- Grid of Buttons -->
+              <div class="buttons-3">
+                <div class="buttons-grid">
+                  <button onclick="toggleText('mission')">Our Mission</button>
+                  <button onclick="toggleText('vision')">Our Vision</button>
+                  <button onclick="toggleText('values')">Our Values</button>
+                </div>
+    
+                <!-- Text Content (Initially Hidden) -->
+                <div class="text-content">
+                  <p id="mission-text" style="display: none;">To sustainably deliver profitable, diversified energy solutions through operational excellence, skilled workforce and effective partnership.</p>
+                  <p id="vision-text" style="display: none;">To be a world-class independent energy company delivering premium value to all stakeholders.</p>
+                  <p id="values-text" style="display: none;">Robert Pankey Oil Rig Corporation is a leading independent oil and natural gas producer . The Company’s focus is on maximizing hydrocarbon production and recovery from its existing assets, acquiring and farming into new opportunities  (specifically those which offer production, cash flow and reserve replacement potential, with a particular focus on the onshore and shallow water offshore areas) and realizing the upside potential within its portfolio through exploration and appraisal activities.</p>
+                </div>
+              </div>
+          </div>
+
+           <!-- Grid buttons (Misson, Vision, Values) -->
+          <script>
+            function toggleText(contentId) {
+                // Hide all text content elements
+                var textContents = document.querySelectorAll('.text-content p');
+                textContents.forEach(function(element) {
+                    element.style.display = 'none';
+                });
+
+                // Display the text content corresponding to the button clicked
+                var contentToShow = document.getElementById(contentId + '-text');
+                if (contentToShow) {
+                    contentToShow.style.display = 'block';
+                }
+            }
+          </script>
+      </div>
+    </section>
+  
+
+  </section>
+
+
+  
+
+{% endblock content %}
+{% block newsleter %} {% include 'newsletter.html' %} {% endblock newsleter %}
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}

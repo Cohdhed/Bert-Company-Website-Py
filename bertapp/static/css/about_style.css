@@ -1,0 +1,556 @@
+/* CSS for the About Us Section */
+.about-section {
+    background-color: #f4f3ee; /* Set background color */
+    padding: 40px 0; /* Add padding to create space around the content */
+    margin-top: -510px;
+  }
+  
+.about-header {
+  text-align: left; /* Center align the header */
+  max-width: 85%;
+  margin: 0 auto; /* Center the content horizontally */
+  padding-bottom: 20px;
+
+}
+
+.p16 {
+  font-family: monospace;
+  font-size: 40px; /* Adjust the font size of the header */
+  font-weight: bolder;
+  color: #333; /* Set color of the header text */
+}
+
+
+.about-up-bg {
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  margin: 0 auto;
+  color: black; /* Adjust text color for better visibility */
+  text-align: center;
+}
+
+.p17 {
+  font-weight: bold;
+  font-size: 27px;
+  padding-bottom: 20px;
+}
+.p18 {
+  font-size: 14px;
+  color: #D1B000;
+  padding-bottom: 20px;
+}
+
+
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 80px;
+  
+}
+
+.about-text {
+  text-align: left;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.p19 {
+  font-family: Playfair Display;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #a8192a;
+}
+
+.p20 {
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  line-height: 1.6; /* Adjust the value as needed */
+  color: rgb(59, 57, 57);
+  padding-bottom: 30px;
+}
+.about-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.about-text ul li {
+  margin-bottom: 10px;
+}
+
+.about-text ul li i {
+  margin-right: 5px;
+}
+
+.fa-check{
+  color: #cea322;
+}
+
+.grid-btn {
+  padding: 12px 20px;
+  background-color: #cea322;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  border: none;
+}
+
+.about-image img {
+  max-width: 90%;
+  height: 500px;
+}
+
+.about-image {
+  text-align: center;
+}
+
+
+.grid-text-beneath {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.p21 {
+  color: #D1B000;
+  padding-bottom: 25px;
+  font-size: 14px;
+}
+.p22 {
+  font-family: Kanit;
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(49, 144, 181);
+  padding-bottom: 30px;
+}
+.p23 {
+  color: grey;
+}
+
+
+/* CEO Section */
+.ceo-section {
+  padding: 50px 0;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.ceo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.ceo-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Make the CEO image circular */
+}
+
+.ceo-story {
+  color: white;
+}
+
+.ceo-name {
+  font-family: Playfair Display;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.ceo-description {
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  line-height: 1.6; /* Adjust the value as needed */
+}
+
+.ceo-big-name {
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 30px;
+  color: #cea322;
+}
+
+
+/* Clients Who Trust Us Section */
+.clients-section {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.clients-header {
+  margin-bottom: 30px;
+}
+
+.p24 {
+  font-family: Playfair Display;
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 40px;
+  color: black;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+  padding-top: 50px;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.client-info {
+  text-align: center;
+}
+
+.client-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.client-remark {
+  text-align: center;
+  color: #666;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+
+
+@media (max-width: 1140px) {
+
+  /* about-up-bg */
+  .about-section {
+    position: relative;
+    margin-top: -485px; /* Adjust the negative margin */
+  }
+
+}
+
+
+
+@media (max-width: 1025px) {
+
+  /* about-up-bg */
+  .about-section {
+    position: relative;
+    margin-top: -425px; /* Adjust the negative margin */
+  }
+
+  .about-up-bg {
+    padding: 100px 20px;
+  }
+  .p17 {
+    font-size: 22px;
+  }
+  .p18 {
+    font-size: 13px;
+  }
+
+  .about-grid {
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px ;
+    flex-direction: column-reverse; /* Reverse the order of the elements for smaller screens */
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .p19 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  
+  .p20 {
+    font-size: 19px;
+    color: rgb(59, 57, 57);
+    padding-bottom: 30px;
+  }
+
+  .about-text ul {
+    padding: 0;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 17px;
+  }
+
+  .ceo-name {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .ceo-description {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6; /* Adjust the value as needed */
+  }
+  
+  .ceo-big-name {
+    font-size: 20px;
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 858px) {
+
+  /* about-up-bg */
+  .about-section {
+    position: relative;
+    margin-top: -420px; /* Adjust the negative margin */
+  }
+
+  .about-up-bg {
+    padding: 80px 20px;
+  }
+  .p17 {
+    font-size: 20px;
+  }
+  .p18 {
+    font-size: 13px;
+  }
+
+  .p21 {
+    font-size: 13px;
+  }
+  .p22 {
+    font-weight: normal;
+    font-size: 30px;
+  }
+  .p23 {
+    color: grey;
+    font-size: 14.5px;
+  }
+
+  .ceo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .ceo-name {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .ceo-description {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6; /* Adjust the value as needed */
+  }
+  
+  .ceo-big-name {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .p24 {
+    font-size: 35px;
+  }
+
+  .client img {
+    width: 60%;
+  }
+
+  .clients-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 70px;
+    padding-top: 50px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  /* about-up-bg */
+  .about-section {
+    margin-top: -420px; /* Adjust the negative margin */
+    padding: 20px 0;
+  }
+
+  .about-header {
+    text-align: center; /* Center align the header */
+    padding-bottom: 20px;
+  }
+
+  .p16 {
+    font-size: 30px; /* Adjust the font size of the header */
+  }
+
+  .about-up-bg {
+    padding: 50px 20px;
+  }
+  .p17 {
+    font-size: 16px;
+  }
+  .p18 {
+    font-size: 12px;
+  }
+
+  /* About grid*/
+  
+  .about-grid {
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 50px ;
+    flex-direction: column-reverse; /* Reverse the order of the elements for smaller screens */
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .about-text {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .p19 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .p20 {
+    font-size: 15px;
+    color: rgb(59, 57, 57);
+    padding-bottom: 30px;
+  }
+
+  .about-text ul {
+    padding: 0;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .grid-btn {
+    padding: 9px 14px;
+  }
+
+
+  .p21 {
+    font-size: 12px;
+  }
+  .p22 {
+    font-weight: normal;
+    font-size: 25px;
+  }
+  .p23 {
+    color: grey;
+    font-size: 13px;
+  }
+
+
+  .p24 {
+    font-size: 30px;
+  }
+
+  .clients-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 70px;
+    padding-top: 50px;
+  }
+
+}
+
+
+@media (max-width: 412px) {
+
+  .p16 {
+    font-size: 25px; /* Adjust the font size of the header */
+  }
+
+  .ceo-name {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .ceo-description {
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.6; /* Adjust the value as needed */
+  }
+  
+  .ceo-big-name {
+    font-size: 15px;
+    text-align: center;
+  }
+
+
+  .p24{
+    font-size: 25px;
+  }
+  .client img {
+    width: 100%;
+  } 
+
+  .client-name {
+    font-weight: bold;
+    color: #333;
+
+  }
+  
+  .client-remark {
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .client-position {
+    font-size: 14px;
+  }
+}

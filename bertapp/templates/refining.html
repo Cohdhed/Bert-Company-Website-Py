@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %} {% include 'header.html' %} {% endblock header %}
+{% block content %} 
+
+
+  <!-- Refining Section -->
+  <section class="about-section">
+    <div class="about-header">
+      <p class="p16">Refining</p>
+    </div>
+    <!-- Content of the sup&trad section goes here -->
+
+    <div class="about-up-bg" style="background-image: url('{% static 'img/bg.jpg' %}');">
+      <!-- Existing content -->
+      <p class="p17">Our Extensive Resume Is Comprised Of Over 3,500 Projects</p>
+    </div>
+
+  </section>
+  
+
+  <!-- New paragraphs with headers -->
+  <div class="paragraphs-container">
+    <div class="paragraph">
+      <p class="p41">We’re proud of the products we create</p>
+      <p class="p42">Our global refining system manufactures fuels and other products sold by our marketing, lubricants, and supply.</p>
+      <p class="p42">In all our work, operating safely, reliably and with a commitment to protecting the environment is among our top priorities. We’ve recently completed major upgrades in several of our refineries and have implemented a loss prevention system at our facilities. This behavior-based safety system is designed to help strengthen our culture of injury-free and incident-free operations while providing a base for strong, competitive performance.</p>
+    </div>
+    <div class="paragraph">
+      <p class="p41">Our refineries serve customers around the world</p>
+      <p class="p42">Seven of our refineries make up more than 95 percent of our total crude oil refining capacity. Five of these core refineries – in Singapore, Thailand, South Korea, and Richmond and El Segundo, California – manufacture products for countries in the Pacific Basin. The sixth and seventh refineries, in Pascagoula, Mississippi, and Pasadena, Texas, primarily supply countries in the Atlantic Basin. Several of these refineries are capable of processing heavy crude oils and producing a variety of high-value products, including transportation fuels.</p>
+      <p class="p42">We acquired the Pasadena Refinery in May 2019. This newest addition to ozones’s refining network, with its capacity of 110,000 barrels of crude oil per day, is integrated with the Pascagoula Refinery and Houston blending centers so that more equity Permian light crude can be processed.</p>
+    </div>
+    <div class="paragraph">
+      <p class="p41">Our refining resources are concentrated in;</p>
+
+      <div class="map-icons">
+        <div class="map-icon">
+            <img src="{% static 'img/north-ame-removebg-preview.png' %}" alt="North America Map Icon">
+            <p class="p42">North America</p>
+        </div>
+        <div class="map-icon">
+            <img src="{% static 'img/asia-removebg-preview.png' %}" alt="Asia-Pacific Map Icon">
+            <p class="p42">Asia-Pacific</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="last-paragraph">
+      <p class="p43">Case study new coke drums successfully installed at el segundo refinery</p>
+      <p class="p44">Transporting six enormous coke drums through the streets of Los Angeles’ South Bay may have happened over a few nights, but it took nearly four years of planning and rigorous execution to get there. The objective: to safely remove six drums installed in the 1960s and replace them with six updated versions. And most important, we were committed to doing it without incident or injury.</p>
+    </div>
+  </div>
+  
+
+
+{% endblock content %}
+{% block newsleter %} {% include 'newsletter.html' %} {% endblock newsleter %}
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}

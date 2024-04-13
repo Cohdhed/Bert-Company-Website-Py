@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block header %} {% include 'header.html' %} {% endblock header %}
+{% block content %} 
+
+  <!-- About Us Section -->
+  <section class="about-section">
+    <div class="about-header">
+      <p class="p16">About Us</p>
+    </div>
+    <!-- Content of the About Us section goes here -->
+    <div class="about-up-bg" style="background-image: url('{% static 'img/bg.jpg' %}');">
+      <!-- Existing content -->
+      <p class="p17">Since inception, Bert Petroleum Consultants has acquired an attractive portfolio of assets in the Oil & Gas chemical industry</p>
+      <p class="p18">WE WILL CATER TO ALL OF YOUR ENGINEERING REQUIREMENTS AS A MULTI-DISCIPLINARY SERVICE PROVIDER OF HIGH QUALITY</p>
+    </div>
+
+    <!-- New layout -->
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="p19">Professional Chemicals Processing</p>
+        <p class="p20"><strong>Bert Petroleum Consultants</strong> is a broad energy company that produces and markets fuels, natural gas. Our employees are committed to better energy that is more affordable, more reliable, cleaner and accessible to as many people as possible. Active in more than 130 countries, our ambition is to become the responsible energy major.</p>
+        <ul>
+          <li><i class="fas fa-check"></i> Oil and gas production facilities</li>
+          <li><i class="fas fa-check"></i> A country-by-country overview of our operations and presence.</li>
+          <li><i class="fas fa-check"></i> Service stations and refining & chemicals sites.</li>
+        </ul>
+        <a href="{% url 'services' %}" class="grid-btn">Our Projects</a>
+      </div>
+      <div class="about-image">
+        <img src="{% static 'img/small-scr.jpg' %}" alt="Portrait">
+      </div>
+    </div>
+
+    <!-- Text beneath the grid -->
+    <div class="grid-text-beneath">
+      <p class="p21">OUR PHILOSOPHY IS BASED ON A CONCEPTUAL APPROACH INSPIRED BY VISION AND DESIGN</p>
+      <p class="p22">Oil and gas engineering, planning and innovation</p>
+      <p class="p23">For more than 30 years, <strong>Bert Petroleum Consultants</strong> has earned one of the finest reputations across the globe for oil and gas chemical engineering service that achieve our client’s vision</p>
+    </div>
+
+    <!-- CEO Section -->
+    <div class="ceo-section" style="background-color: #800020;">
+      <div class="ceo-grid">
+        <!-- CEO Image -->
+        <div class="ceo-image">
+          <img src="{% static 'img/robert.jpeg' %}" alt="CEO Portrait">
+        </div>
+        <!-- CEO Story -->
+        <div class="ceo-story">
+          <p class="ceo-name">Meet The CEO</p>
+          <p class="ceo-description"> <strong>Robert Pankey</strong> has been the CEO of Bert Petroleum Consultants since November 2009. He believes that safe operations, commercial innovation and technological innovation are the cornerstones needed to deliver better value for operators, employees and owners. Robert joined Vesco Oil Corporation in 2016 and his career in offshore drilling spans a number of technical, operational and leadership roles. These include Rig Manager, Operations Manager and more recently Chief Operating Officer here in United States. Robert holds a Master’s degree in Science in Engineering from the Ivano Frankivsk State University of Oil & Gas and an MBA from IMD and the University of Geneva.</p>
+          <p class="ceo-big-name">ENGR. ROBERT PANKEY</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Clients Who Trust Us Section -->
+  <section class="clients-section">
+    <div class="clients-header">
+      <p class="p24">CLIENTS WHO TRUST US</p>
+    </div>
+
+    <div class="clients-grid">
+      <!-- Client 1 -->
+      <div class="client">
+        <img src="{% static 'img/mark-dixon.jpg' %}" alt="Client 1">
+        <div class="client-info">
+          <p class="client-remark">“Bert Petroleum Consultants are very professional and talented. They always impress me with their knowledge and dedication.”</p>
+          <p class="client-name">MARK DIXON</p>
+          <p class="client-position">CEO Of IWG Co</p>
+        </div>
+      </div>
+
+      <!-- Client 2 -->
+      <div class="client">
+        <img src="{% static 'img/phillips.jpg' %}" alt="Client 2">
+        <div class="client-info">
+          <p class="client-remark">“We have been working with the firm for over 15 years. They handle all of our company needs and we’ve never been let down. Highly recommended.”</p>
+          <p class="client-name">PHILLIS REED</p>
+          <p class="client-position">Gloritech Inc., VP Operations</p>
+        </div>
+      </div>
+
+      <!-- Client 3 -->
+      <div class="client">
+        <img src="{% static 'img/sara.jpg' %}" alt="Client 3">
+        <div class="client-info">
+          <p class="client-remark">“Robert was so compassionate and really seemed to care about my products! He was so nice to work with and helped me get the results I wanted!”</p>
+          <p class="client-name">SARA BARKER</p>
+          <p class="client-position">Personal Client</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--2nd Background Section -->
+  <section class="background-section">
+    <div class="background-content">
+      <!-- Grid Container -->
+      <div class="grid-container">
+        <!-- Grid Cell 1 -->
+        <div class="grid-cell">
+          <img src="{% static 'img/workers.jpg' %}" alt="Service 1">
+          <div class="grid-text">
+            <p class="big-figure">721+</p>
+            <p class="short-text">WORKERS IN INDUSTRY</p>
+          </div>
+        </div>
+        <!-- Grid Cell 2 -->
+        <div class="grid-cell">
+          <img src="{% static 'img/projectss.jpg' %}" alt="Service 2">
+          <div class="grid-text">
+            <p class="big-figure">502+</p>
+            <p class="short-text">COMPLETED PROJECTS</p>
+          </div>
+        </div>
+        <!-- Grid Cell 3 -->
+        <div class="grid-cell">
+          <img src="{% static 'img/professional.jpg' %}" alt="Service 3">
+          <div class="grid-text">
+            <p class="big-figure">145+</p>
+            <p class="short-text">PROFESSIONAL ENGINEERS</p>
+          </div>
+        </div>
+        <!-- Grid Cell 4 -->
+        <div class="grid-cell">
+          <img src="{% static 'img/world.jpg' %}" alt="Service 4">
+          <div class="grid-text">
+            <p class="big-figure">45+</p>
+            <p class="short-text">WORLDWIDE BRANCHES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Get Started Section -->
+  <section class="get-started-section">
+    <div class="background-image">
+      <div class="content">
+        <p class="p12">WE ARE YOUR TRUSTED OIL & GAS CHEMICAL PARTNER</p>
+        <p class="p13">We have a professional team of workers that makes our dreams easy to reach</p>
+        <a href="{% url 'contact' %}" class="get-started-btn">GET STARTED</a>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock content %}
+{% block newsleter %} {% include 'newsletter.html' %} {% endblock newsleter %}
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}

@@ -1,0 +1,22 @@
+{% load static %}
+
+<header>
+    <nav class="navbar">
+      <input type="checkbox" id="navbar-toggle" class="navbar-toggle-checkbox">
+      <label for="navbar-toggle" class="navbar-toggle-label">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="{% url 'home' %}" class="navbar-logo">
+        <img src="{% static 'img/logo5.jpg' %}" alt="DesignX Logo">
+      </a>
+      <ul class="navbar-menu">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'supp_trad' %}">Supply & Trading</a></li>
+        <li><a href="{% url 'refining' %}">Refining</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero-section"></section>
+</header>
