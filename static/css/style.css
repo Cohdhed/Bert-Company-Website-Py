@@ -1,4 +1,3 @@
-
 /* Reset some default styles */
 * {
   padding: 0;
@@ -17,9 +16,9 @@ body {
 
 .navbar {
   font-family: 'Your Desired Font', monospace;
-  background-image: url('../img/navbg.jpg'); /* Change this to the URL of your image */
+  background-image: url('/img/navbg.jpg'); /* Change this to the URL of your image */
   background-size: cover;
-  margin-bottom: 20px;
+  
 }
 
 .navbar-logo {
@@ -78,8 +77,8 @@ body {
 /* BANNER */
 .banner {
   position: relative;
-  height: 500px; /* Adjust the height as needed */
-  background-image: url('../img/new-bg.jpg'); /* Replace 'blurred-background.jpg' with your image */
+  height: 500px;
+  background-image: url('/img/new-bg.jpg'); /* Replace 'blurred-background.jpg' with your image */
   background-size: cover;
   overflow: hidden;
   margin-top: -510px;
@@ -120,18 +119,19 @@ body {
 
 /* BODY */
 .main-body {
-  background-image: url('../img/bg.jpg'); /* Replace with your desired image */
+  background-image: url('/img/bg.jpg'); /* Replace with your desired image */
   background-size: cover;
   background-position: center;
   padding: 50px 0; /* Add padding as needed */
   text-align: center;
   color: white;
-  height: 900px;
+  height: auto;
 }
 
 .main-body-content {
   max-width: 80%; /* Adjust as needed */
   margin: 0 auto; /* Center the content horizontally */
+  padding-bottom: 30px;
 }
 
 .p1 {
@@ -156,10 +156,6 @@ body {
 
 /* SERVICES*/
 .service-boxes {
-  position: absolute;
-  top: calc(100% + 270px); /* Adjust the value as needed to push the boxes down further */
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap; /* Ensure the boxes wrap to the next line */
   justify-content: space-between; /* Spread the boxes evenly across the container */
@@ -253,7 +249,7 @@ body {
 
 /* 2nd Background Section */
 .background-section {
-  background-image: url('../img/down-bg.jpeg'); /* Replace with your desired image */
+  background-image: url('/img/down-bg.jpeg'); /* Replace with your desired image */
   background-size: cover;
   background-position: center;
   padding: 90px 0 100px 0; /* Add padding as needed */
@@ -438,7 +434,7 @@ body {
 
 /* New CSS for the 3rd Background Section */
 .third-background-section {
-  background-image: url('../img/bg.jpg');
+  background-image: url('/img/bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -514,7 +510,7 @@ body {
 }
 
 .background-image {
-  background-image: url('../img/blur2.jpeg');
+  background-image: url('/img/blur2.jpeg');
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -558,7 +554,7 @@ body {
 }
 
 .newsletter-background-image {
-  background-image: url('../img/navbg.jpg'); /* Replace 'background_image.jpg' with the path to your background image */
+  background-image: url('/img/navbg.jpg'); /* Replace 'background_image.jpg' with the path to your background image */
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -673,12 +669,9 @@ body {
 
 /* Media queries */
 @media (min-width: 952px) and (max-width: 1100px){
-  .service-boxes {
-    top: calc(100% + 350px); /* Adjust the value as needed to push the boxes down further */
-  }
   
   .main-body {
-    height: 900px;
+    height: auto;
   }
 
   /* Grid Cell */
@@ -738,7 +731,7 @@ body {
   }
 
   .main-body {
-    height: 860px;
+    height: auto;
   }
 
   .p1 {
@@ -746,10 +739,6 @@ body {
   }
 
   /* SERVICES*/
-  .service-boxes {
-    top: calc(100% + 330px); /* Adjust the value as needed to push the boxes down further */
-    margin: 0 auto; /* Center the container horizontally */
-  }
 
   .service-box {
     width: calc(33.33% - 40px); /* Set each box to occupy one-third of the container's width with some spacing between */
@@ -894,7 +883,7 @@ body {
   }
 
   .main-body {
-    height: 1120px;
+    height: auto;
   }
 
   .p1 {
@@ -916,10 +905,7 @@ body {
   }
 
   /* SERVICES*/
-  .service-boxes {
-    top: calc(100% + 60px); /* Adjust the value as needed to push the boxes down further */
-    margin: 0 auto; /* Center the container horizontally */
-  }
+
 
   .service-box {
     width: calc(50% - 40px); /* Set each box to occupy one-third of the container's width with some spacing between */
@@ -1149,7 +1135,7 @@ body {
   }
 
   .main-body {
-    height: 1880px;
+    height: auto;
   }
 
   .p1 {
@@ -1177,7 +1163,6 @@ body {
   .service-boxes {
     width: 100%; /* Make the container full width */
     padding: 0 20px; /* Add padding to the sides */
-    top: calc(100% + 60px);
   }
   
   .service-box {
@@ -1359,8 +1344,9 @@ body {
     z-index: 999; /* Adjust z-index to make sure navbar menu is above other content */
   }
 
+
   .service-boxes {
-    top: calc(100% + 110px);
+    top: calc(55% + 110px);
   }
 
   .background-section {
