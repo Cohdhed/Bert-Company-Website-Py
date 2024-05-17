@@ -275,45 +275,47 @@ body {
 }
 
 /* Grid Container */
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;
+.grid-container1 {
+  display: grid;
   margin-top: 20px;
 }
 
 /* Grid Cell */
 .grid-cell {
-  flex: 1;
-  padding: 30px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: auto 1fr; /* Image on the left, text on the right */
+  padding: 60px;
   margin: 0px; /* Adjust spacing between cells */
   border: 1px solid #ccc; /* Add a thin border */
 }
 
 /* Grid Image */
 .grid-cell img {
-  width: 100%;
-  max-height: 200px; /* Adjust as needed */
+  width: 80%;
 }
 
-/* Grid Text */
+.grid-text-completed-projects {
+  text-align: left;
+}
+
 .grid-text h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.grid-text p {
+.grid-text-completed-projects .discussion {
   font-size: 16px;
 }
 
 .big-figure {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 90px !important;
+  font-size: 70px !important;
   font-weight: lighter !important;
 }
 .short-text{
   font-family: "Bitter", serif;
   color: #5c5759;
+  padding-bottom: 15px;
 }
 
 
@@ -668,18 +670,55 @@ body {
 
 
 /* Media queries */
+@media (max-width: 1165px){
+  /* Grid Image */
+  .grid-cell {
+    padding: 40px;
+  }
+  .grid-cell img {
+    width: 70%;
+  }
+
+  .grid-text-completed-projects {
+    margin-left: -130px;
+  }
+
+  .grid-text-completed-projects .discussion {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px){
+   /* Grid Cell */
+   .grid-cell {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    padding: 50px; /* Adjust padding */
+    justify-items: center; /* Center items within the grid cell */
+  }
+  
+  .grid-cell img {
+    width: 70%; /* Image takes full width */
+    margin-bottom: 20px; /* Add spacing between image and text */
+  }
+
+  .grid-text-completed-projects {
+    text-align: center;
+    width: 60%;
+  }
+
+  .grid-text-completed-projects {
+    margin-left: 0px;
+  }
+}
+
+
+
 @media (min-width: 952px) and (max-width: 1100px){
   
   .main-body {
     height: auto;
   }
 
-  /* Grid Cell */
-  .grid-cell {
-    width: calc(50% - 20px); /* Make grid cells occupy 50% of the container width with spacing */
-    padding: 30px 90px; /* Adjust padding for smaller screens */
-    margin: 10px 10px;
-  }
 
   .grid-section {
     max-width: 90%;
@@ -745,12 +784,6 @@ body {
     margin: 20px;
   }
 
-  /* Grid Cell */
-  .grid-cell {
-    width: calc(50% - 20px); /* Make grid cells occupy 50% of the container width with spacing */
-    padding: 30px 60px; /* Adjust padding for smaller screens */
-    margin: 10px 10px;
-  }
 
   .grid-section {
     max-width: 90%;
@@ -924,7 +957,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1080px;
+    /* height: 1080px; */
   }
   
   .p4 {
@@ -935,22 +968,6 @@ body {
     font-size: 20px; /* Adjust font size for smaller screens */
   }
 
-  /* Grid Container */
-  .grid-container {
-    flex-wrap: wrap; /* Allow grid cells to wrap */
-  }
-
-  /* Grid Cell */
-  .grid-cell {
-    width: calc(50% - 20px); /* Make grid cells occupy 50% of the container width with spacing */
-    padding: 40px; /* Adjust padding for smaller screens */
-    margin: 10px 10px;
-
-  }
-
-  .big-figure {
-    font-size: 80px !important;
-  }
   
   .grid-section {
     max-width: 90%;
@@ -1056,14 +1073,8 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1000px !important;
   }
 
-  /* Grid Cell */
-  .grid-cell {
-    width: 100%; /* Make grid cells full width on smaller screens */
-    padding: 20px; /* Adjust padding for smaller screens */
-  }
 
   .footer-grid {
     font-size: 15px;
@@ -1077,28 +1088,17 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 980px !important;
   }
 
-  /* Grid Cell */
-  .grid-cell {
-    width: 100%; /* Make grid cells full width on smaller screens */
-    padding: 20px; /* Adjust padding for smaller screens */
-  }
 }
 
 @media (max-width: 640px) {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 950px !important;
+    /* height: 950px !important; */
   }
 
-  /* Grid Cell */
-  .grid-cell {
-    width: 100%; /* Make grid cells full width on smaller screens */
-    padding: 20px; /* Adjust padding for smaller screens */
-  }
 }
 
 
@@ -1176,7 +1176,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1930px !important;
+    /* height: 1930px !important; */
   }
   
   .p4 {
@@ -1187,21 +1187,31 @@ body {
     font-size: 20px; /* Adjust font size for smaller screens */
   }
 
-  /* Grid Container */
-  .grid-container {
-    flex-direction: column; /* Stack grid cells vertically on smaller screens */
+  /* Grid cell */
+  .grid-cell {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    padding: 50px; /* Adjust padding */
+    justify-items: center; /* Center items within the grid cell */
+  }
+  
+  .grid-cell img {
+    width: 90%; /* Image takes full width */
+    margin-bottom: 20px; /* Add spacing between image and text */
   }
 
-  /* Grid Cell */
-  .grid-cell {
-    width: 100%; /* Make grid cells full width on smaller screens */
-    padding: 20px 60px; /* Adjust padding for smaller screens */
-    margin: 10px 0;
+  .grid-text-completed-projects {
+    text-align: center;
+    width: 70%;
   }
 
   .big-figure {
     font-size: 75px !important;
   }
+  .grid-text-completed-projects .discussion {
+    font-size: 14px;
+  }
+
+
 
   .grid-section {
     max-width: 90%;
@@ -1304,7 +1314,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1900px !important;
+    /* height: 1900px !important; */
   }
 }
 
@@ -1312,7 +1322,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1850px !important;
+    /* height: 1850px !important; */
   }
 
   .get-started-btn {
@@ -1350,7 +1360,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1730px !important;
+    /* height: 1730px !important; */
   }
   
   .p4 {
@@ -1361,17 +1371,23 @@ body {
     font-size: 20px; /* Adjust font size for smaller screens */
   }
 
-  /* Grid Container */
-  .grid-container {
-    flex-direction: column; /* Stack grid cells vertically on smaller screens */
-  }
 
   /* Grid Cell */
   .grid-cell {
-    width: 100%; /* Make grid cells full width on smaller screens */
-    padding: 0px 30px !important; /* Adjust padding for smaller screens */
-    padding-top: 20px !important;
-    margin: 7px 0;
+    padding: 40px;
+  }
+  .grid-cell img {
+    width: 100%; /* Image takes full width */
+    margin-bottom: 20px; /* Add spacing between image and text */
+  }
+
+  .grid-text-completed-projects {
+    text-align: center;
+    width: 80%;
+  }
+
+  .grid-text-completed-projects .discussion {
+    font-size: 13px;
   }
 
   .big-figure {
@@ -1380,6 +1396,7 @@ body {
   .short-text{
     font-size: smaller !important;
   }
+
 
   .p12 {
     color: #22669a;
@@ -1430,7 +1447,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1690px !important;
+    /* height: 1690px !important; */
   }
 
 }
@@ -1439,7 +1456,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1650px !important;
+    /* height: 1650px !important; */
   }
 
 }
@@ -1455,7 +1472,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1580px !important;
+    /* height: 1580px !important; */
   }
 
 }
@@ -1470,7 +1487,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1540px !important;
+    /* height: 1540px !important; */
   }
 
 }
@@ -1508,7 +1525,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1470px !important;
+    /* height: 1470px !important; */
   }
 
 }
@@ -1529,7 +1546,7 @@ body {
   .background-section {
     padding: 100px 0; /* Add padding as needed */
     text-align: center;
-    height: 1420px !important;
+    /* height: 1420px !important; */
   }
 
 }
